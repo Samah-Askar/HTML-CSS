@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My One-Page Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background: #fdf6f0;
+    }
+    nav {
+      background-color: #ff6f61;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .home {
+      background-color: #ffe0ac;
+      text-align: center;
+    }
+    .gallery {
+      background-color: #d0f4de;
+      text-align: center;
+    }
+    .gallery img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .videos {
+      background-color: #cce7ff;
+      text-align: center;
+    }
+    .videos iframe {
+      width: 80%;
+      height: 315px;
+      max-width: 560px;
+      border: none;
+    }
+    .contact {
+      background-color: #ffb3c1;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #999;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 10px;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #444;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation with bookmarks -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+    <a href="#footer">Footer</a>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <h1>Welcome to My Colorful Website</h1>
+    <p>This is a simple one-page site made with HTML and CSS. Enjoy the colors!</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Picture Gallery</h2>
+    <img src="https://cdn.pixabay.com/photo/2018/02/01/19/21/easter-3123834_1280.jpg" alt="Sample Image" />
+    <img src="https://cdn.pixabay.com/photo/2018/02/01/19/21/easter-3123834_1280.jpg" alt="Sample Image" />
+    <img src="https://cdn.pixabay.com/photo/2018/02/01/19/21/easter-3123834_1280.jpg" alt="Sample Image" />
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos" class="videos">
+    <h2>Watch This!</h2>
+<iframe width="914" height="514" src="https://www.youtube.com/embed/PKtnafFtfEo" title="Youtube Rewind 2020, Thank God It&#39;s Over" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Samah Askar's Colorful Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
