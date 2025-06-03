@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pink Portfolio</title>
+
+
+<style>
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5; /* light pink */
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff69b4; /* hot pink */
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #fffacd; /* lemon chiffon */
+}
+
+/* Hero Image with Text */
+.hero {
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/28/04/55/fractal-2014713_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    color: white;
+    text-shadow: 2px 2px #000;
+}
+
+/* Centered Image */
+.image-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-section img {
+    width: 300px;
+    border-radius: 15px;
+    filter: brightness(0.9) saturate(1.5);
+}
+
+/* Table Styles */
+.table-section table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.table-section th, .table-section td {
+    border: 2px solid #ff69b4;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-section th {
+    background-color: #ffc0cb;
+}
+
+/* Two Column Layout */
+.columns {
+    display: flex;
+    margin: 40px;
+    gap: 20px;
+}
+
+.column {
+    background-color: #ffe4e1;
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+    color: #800000;
+}
+
+/* Paragraph Hover */
+.hover-text p {
+    text-align: center;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.hover-text p:hover {
+    color: #ff1493;
+}
+
+/* Image Overlay Fade */
+.overlay-container {
+    position: relative;
+    width: 400px;
+    margin: 40px auto;
+}
+
+.overlay-container img {
+    width: 100%;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 105, 180, 0.8);
+    color: white;
+    padding: 10px 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.overlay-conta
+
+</style>
+</head>
+<body>
+
+<!-- Fixed Navbar -->
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+</nav>
+
+<!-- Hero Image with Text Overlay -->
+<header class="hero">
+    <h1>Welcome to My Portfolio</h1>
+</header>
+
+<!-- Centered Image with Filter and Rounded Edges -->
+<section class="image-section" id="about">
+    <img src="https://cdn.pixabay.com/photo/2017/08/19/21/09/egg-2659879_1280.png" alt="Profile">
+</section>
+
+<!-- Styled Table -->
+<section class="table-section" id="projects">
+    <h2>Skills Table</h2>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+        </tr>
+    </table>
+</section>
+
+<!-- Two Column Layout -->
+<section class="columns">
+    <div class="column">This is column one.</div>
+    <div class="column">This is column two.</div>
+</section>
+
+<!-- Paragraph Hover Effect -->
+<section class="hover-text">
+    <p>Hover over this paragraph to see the effect!</p>
+</section>
+
+<!-- Image Overlay Fade -->
+<section class="overlay-section">
+    <div class="overlay-container">
+        <img src="https://cdn.pixabay.com/photo/2019/09/08/19/31/birthday-4461725_1280.png" alt="Overlay Image">
+        <div class="overlay-text">Overlay Text</div>
+    </div>
+</section>
+
+<!-- Autoplaying Video -->
+<section class="video-section">
+    <video src="https://cdn.pixabay.com/video/2020/12/03/58142-487508532_tiny.mp4" autoplay muted loop></video>
+</section>
+
+<!-- Video with Text Overlay -->
+<section class="video-overlay">
+    <div class="video-wrapper">
+        <video src="https://cdn.pixabay.com/video/2020/12/03/58142-487508532_tiny.mp4" autoplay muted loop></video>
+        <div class="video-text">Welcome to my site!</div>
+    </div>
+</section>
+
+<!-- Footer -->
+<hr/>
+<footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
